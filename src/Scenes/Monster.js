@@ -80,6 +80,30 @@ class Monster extends Phaser.Scene {
                 my.sprite.mouth2.visible = false;
                 my.sprite.mouth.visible = true;
             }
+            if(event.code == "KeyD"){
+                my.sprite.body.x += 1;
+                my.sprite.leftLeg.x += 1;
+                my.sprite.rightLeg.x += 1;
+                my.sprite.rightArm.x += 1;
+                my.sprite.leftArm.x += 1;
+                my.sprite.eye.x += 1;
+                my.sprite.mouth.x += 1;
+                my.sprite.acc1.x += 1;
+                my.sprite.acc2.x += 1
+                my.sprite.mouth2.x += 1;
+            }
+            if(event.code == "KeyA"){
+                my.sprite.body.x -= 1;
+                my.sprite.leftLeg.x -= 1;
+                my.sprite.rightLeg.x -= 1;
+                my.sprite.rightArm.x -= 1;
+                my.sprite.leftArm.x -= 1;
+                my.sprite.eye.x -= 1;
+                my.sprite.mouth.x -= 1;
+                my.sprite.acc1.x -= 1;
+                my.sprite.acc2.x -= 1
+                my.sprite.mouth2.x -= 1;
+            }
         })
        
     }
